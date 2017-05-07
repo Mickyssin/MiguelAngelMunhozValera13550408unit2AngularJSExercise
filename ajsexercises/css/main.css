@@ -1,0 +1,24 @@
+body{
+	background-color: #37474F;
+}
+
+#sorter{
+	margin-top: 8px;
+}
+
+#main{
+	margin: 70px;
+}
+
+#books{
+	border: 2px solid #2196F3;
+	padding: 16px;
+    border-radius: 3px;
+    margin: 30px;
+    background-color: #ffffff;
+}
+
+#books img{
+	float: left;
+	margin-right: 7px;
+}

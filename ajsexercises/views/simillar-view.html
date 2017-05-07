@@ -1,0 +1,19 @@
+<div ng-repeat="book in $ctrl.books | orderBy:$ctrl.sort: $ctrl.sort === 'count'| filter:$ctrl.search ">
+        <div class="row panel-book">
+            <div class="col-lg-2" >
+                <div class="row">
+                    <a ui-sref="tab({id:book.id - 1})">
+                        <img src="{{book.img}}" alt="" class="img-responsive"/>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-10">
+                <div class="row">
+                    <h3>{{book.title}}</h3>
+                    <p><strong>{{book.author}}</strong></p>
+                    <p class="text-justify">{{book.synopsis}}</p>
+                    <p>Visitas : {{book.count}}</p>
+                </div>
+            </div>
+        </div>
+    </div>

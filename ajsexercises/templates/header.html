@@ -1,0 +1,26 @@
+<nav class="navbar navbar-default navbar-inverse navbar-fixed-top affix navbar-custom" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            Menu <i class="fa fa-bars"></i>
+        </button>
+        <a class="navbar-brand" ui-sref="home">Tienda de Libros</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <form class=" navbar-form navbar-right" >
+            <div class="form-group">
+                <input type="search" class="form-control" name="name" id="" placeholder="Buscar..." ng-model="$ctrl.search"/>
+            </div>
+        </form>
+        <ul id="sorter" class="nav navbar-nav navbar-right">
+            <li><label>Ordenar por...</label></li>
+            <li><select class="form-control" ng-model="sort">
+                    <option value="title">Titulo</option>
+                    <option value="author">Autor</option>
+                    <option value="editorial">Editorial</option>
+                </select></li>
+        </ul>
+    </div><!-- /.navbar-collapse -->
+</nav>
