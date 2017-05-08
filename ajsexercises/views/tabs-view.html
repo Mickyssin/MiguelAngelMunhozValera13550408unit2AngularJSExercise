@@ -1,3 +1,5 @@
+<header ng-include="'templates/header.html'"></header>
+
 <div id="books" class="container-fluid tab-container">
     <div class="row panel-tab">
         <div class="col-lg-8" >
@@ -5,7 +7,7 @@
                 <h1>{{$ctrl.book.title}}</h1>
                 <img src="{{$ctrl.book.img}}" alt="" class="img-responsive"/>
                 <p><strong>{{$ctrl.book.author}}</strong></p>
-                <p><b>{{$ctrl.book.editorial}}</b></p>
+                <p><b>Editorial: {{$ctrl.book.editorial}}</b></p>
                 <p class="text-justify">{{$ctrl.book.synopsis}}</p>
                 <a ui-sref="simillar({genre:$ctrl.book.genre})">También te podría gustar...</a>
             </div>
