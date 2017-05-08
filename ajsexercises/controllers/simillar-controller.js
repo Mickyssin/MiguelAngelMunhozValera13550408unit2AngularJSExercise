@@ -3,10 +3,10 @@
 
     angular.module('BookStoreApp').controller('SimillarController',SimillarController);
 
-    SimillarController.$inject= ['simillarBook'];
-    function SimillarController(simillarBook) {
+    SimillarController.$inject= ['simillarBooks'];
+    function SimillarController(simillarBooks) {
         var $ctrl= this;
-        console.log(simillarBook);
-        $ctrl.simillarBook= simillarBook;
+        console.log(simillarBooks);
+        $ctrl.simillarBooks= simillarBooks;
     }
 })();

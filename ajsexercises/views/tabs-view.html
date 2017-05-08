@@ -7,7 +7,7 @@
                 <p><strong>{{$ctrl.book.author}}</strong></p>
                 <p><b>{{$ctrl.book.editorial}}</b></p>
                 <p class="text-justify">{{$ctrl.book.synopsis}}</p>
-                <a ui-sref="simillar({genre:$ctrl.simillarBook.genre})">También te podría gustar...</a>
+                <a ui-sref="simillar({genre:$ctrl.book.genre})">También te podría gustar...</a>
             </div>
             <a ui-sref="home"><button class="btn btn-info">Volver</button></a>
         </div>

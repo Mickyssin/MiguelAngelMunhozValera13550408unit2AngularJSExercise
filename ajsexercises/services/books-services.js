@@ -82,8 +82,8 @@
                 return true
                 }
             });
-            return similarBooks;
-            console.log(simillarBooks);   
+            console.log('Aqui',simillarBooks);
+            return simillarBooks;
         }
 
     }

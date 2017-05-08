@@ -31,7 +31,7 @@
                 }
             })
             .state('simillar', {
-                url:'/simillar/',
+                url:'/simillar/{genre}',
                 templateUrl: 'views/simillar-view.html',
                 controller: 'SimillarController as $ctrl',
                 resolve:{
