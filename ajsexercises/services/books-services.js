@@ -12,7 +12,7 @@
             "editorial": "El lado oscuro",
             "synopsis": "Harry Potter ingresa a la escuela Howarts de Magia y hechicería.",
             "img": "./public/img/hp1.jpg",
-            "genre": "Fantasie, Action, Sciense Fiction"
+            "genre": "Fantasie, Action, Sciense Fiction, Magic"
         },
         {
             "id": 2,
@@ -21,7 +21,7 @@
             "editorial": "Salamandra",
             "synopsis": "Harry vuelve al segundo año en la escuela Howarts. Después de descubrir la verdad de su pasado, Harry deberá enfrentar nuevas pruebas.",
             "img": "./public/img/hp2.jpg",
-            "genre": "Romance"
+            "genre": "Fantasie, Action, Sciense Fiction, Magic"
         },
         {
             "id": 3,
@@ -30,7 +30,7 @@
             "editorial": "Oceano",
             "synopsis": "Un peligroso reo escapa de la prisión de máxima seguridad Azkaban y va a Howarts presuntamente buscando a Harry.",
             "img": "./public/img/hp3.jpg",
-            "genre": "Fantasie, Action, Sciense Fiction"
+            "genre": "Fantasie, Action, Sciense Fiction, Magic"
         },
         {
             "id": 4,
@@ -39,16 +39,43 @@
             "editorial": "Salamandra",
             "synopsis": "Los juegos de los tres magos se celebraran en Howarts, en el cuál Harry participará de una manera inesperada.",
             "img": "./public/img/hp4.jpg",
-            "genre": "Romance, Comedy"
+            "genre": "Fantasie, Action, Sciense Fiction, Magic"
         },
         {
             "id": 5,
-            "title": "Narnia el León la Bruja y el ropero",
+            "title": "Narnia el Sobrino del Mago",
             "author": "C. S. Lewis",
-            "editorial": "Zelda",
-            "synopsis": "3 Niños entran a un mundo mágico a travez de un viejo ropero.",
-            "img": "./public/img/hp5.jpg",
-            "genre": "Novel, Fiction"
+            "editorial": "Ventura",
+            "synopsis": "2 Niños descubren el poder de unos anillos capaces de viajar entre mundos.",
+            "img": "./public/img/na1.jpg",
+            "genre": "Fiction, Fantasie"
+        },
+        {
+            "id": 6,
+            "title": "Narnia el Leon, la Bruja y el Ropero",
+            "author": "C. S. Lewis",
+            "editorial": "Oceano",
+            "synopsis": "3 niños entran a un mundo mágico a traves de un Ropero y viven aventuras fantasticas.",
+            "img": "./public/img/na2.jpg",
+            "genre": "Fiction, Fantasie"
+        },
+        {
+            "id": 7,
+            "title": "Romeo y Julieta",
+            "author": "W. Sheakspear",
+            "editorial": "Ventura",
+            "synopsis": "Cuenta la historia de dos jovenes enamorados cuyas familias se oponían a su union.",
+            "img": "./public/img/rj.jpg",
+            "genre": "Novel, Romance"
+        },
+        {
+            "id": 8,
+            "title": "Tal como somos",
+            "author": "S. Nicholas",
+            "editorial": "Oceano",
+            "synopsis": "Colin aprovehca la segunda oportunidad que le da la vida cuando conoce a María y sus vidas cambian.",
+            "img": "./public/img/ts.jpg",
+            "genre": "Novel, Romance"
         }
         /*{
             "id": 4,
