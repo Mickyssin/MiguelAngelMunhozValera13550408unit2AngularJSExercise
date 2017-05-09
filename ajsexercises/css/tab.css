@@ -1,3 +1,25 @@
 #review{
 	padding-left: 100px;
+	text-align: justify;
+}
+
+#simillar{
+	margin-top: 15px;
+	text-align: right;
+}
+
+#comments-section{
+	margin-top: 15px;
+}
+
+#comment{
+	margin-top: 5px;
+	border: 1px solid grey;
+	text-align: justify;
+}
+
+#by{
+	margin-top: 10px;
+	color: grey;
+	text-align: right;
 }

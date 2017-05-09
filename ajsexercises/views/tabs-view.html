@@ -5,13 +5,39 @@
         <div class="col-lg-8" >
             <div class="row">
                 <h1>{{$ctrl.book.title}}</h1>
-                <img src="{{$ctrl.book.img}}" alt="" class="img-responsive"/>
+                <img class="img-responsive" src="{{$ctrl.book.img}}" alt="Imagen de libro"/>
                 <p><strong>{{$ctrl.book.author}}</strong></p>
                 <p><b>Editorial: {{$ctrl.book.editorial}}</b></p>
                 <p class="text-justify">{{$ctrl.book.synopsis}}</p>
-                <a ui-sref="simillar({genre:$ctrl.book.genre})">También te podría gustar...</a>
+                <!-- This is the part to get books that share genre with the current one -->
+                <a id="simillar" ui-sref="simillar({genre:$ctrl.book.genre})">También te podría gustar...</a>
             </div>
-            <a ui-sref="home"><button class="btn btn-info">Volver</button></a>
+            <!-- Thi is the start of the comments section -->
+                <div id="comments-section" class="container-fluid">
+                <h2><span class="label label-primary">Comentarios Anteriores:</span></h2>
+                <div id="comment" ng-repeat="comment in $ctrl.book.comments">
+                    <blockquote>
+                        <p>{{comment.content}}</p>
+                        <p id="by" class="small">Por: {{comment.author}}</p>
+                    </blockquote>
+                    <hr>
+                </div>
+                <div class="form-group">
+                    <label>Comentario:</label>
+                    <textarea class="form-control" ng-model="$ctrl.comment.content" placeholder="Lo que pienso de este libro es..." name="" id="" cols="30" rows="10" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label>De:</label>
+                    <input placeholder="alguien@dominio.com" class="form-control" type="email" ng-model="$ctrl.comment.author" required/>
+                    <!-- This section validates the email -->
+                    <div class="alert alert-danger" ng-show="$ctrl.emailValidate">
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                        <strong>Email no valido, </strong>Ingresa un email valido
+                    </div>
+                </div>
+                    <button class="btn btn-success" ng-click="$ctrl.addComment($ctrl.book.id - 1,$ctrl.comment) " value="Agregar Comentario">Agregar Comentario <span class="badge">+</span></button>
+                    </div><!-- This is the end of the comments section -->
         </div>
     </div>
 </div>
+<a ui-sref="home"><button class="btn btn-info">Volver</button></a>

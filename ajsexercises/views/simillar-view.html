@@ -1,13 +1,14 @@
 <header ng-include="'templates/header.html'"></header>
 
+<h2 id="simi-title">Libros que podrían gustarte:</h2>
 <div id="books" ng-repeat="book in $ctrl.simillarBooks">
         <div class="row panel-book">
-            <div class="col-lg-2" >
-            </div>
             <div class="col-lg-10">
                 <div class="row">
-                    <h3>{{book.title}}</h3>
-                    <img src="{{book.img}}" alt="" class="img-responsive"/>
+                    <a ui-sref="tab({id:book.id - 1})"><h3>{{book.title}}</h3></a>
+                    <a ui-sref="tab({id:book.id - 1})">
+                    <img class="img-responsive" src="{{book.img}}" alt="Imagen de libro"/>
+                    </a>
                     <p><strong>{{book.author}}</strong></p>
                     <p><b>Editorial: {{book.editorial}}</b></p>
                     <p class="text-justify">{{book.synopsis}}</p>
